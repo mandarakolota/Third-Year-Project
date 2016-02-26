@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<!--meta tag for proper rendering and touch zooming.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"
+		
+		<!--jQuery mobile css and libraries-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<!--Bootstrap libraries-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+	</head>
+	<body>
+		
+		<div data-role="header" data-theme"a|b">
+				<h1> Login Page.</h1>
+			</div>
+			
+		<div id="navigation" style="text-align:center">
+			<a data-transition="slide" class="btn btn-default" href="MainDocument.html">Home</a>
+			<a data-transition="slide" class="btn btn-default" href="Profiling.html">Don't have an account ? Register</a>
+		
+		</div>
+		
+		<div data-role="fieldcontain">
+			
+			<input type="text" name="username" id="username" value="" placeholder="Input username please." />
+			<input type="password" name="password" id="password" value="" placeholder="Please input password " />
+			
+			<input type="button" data-theme="a|b" data-mini="true" data-transition="slide" class="btn btn-primary" onclick="location.href='Stats.html';" value="Login." />
+			
+		</div>	
+		
+		
+	</body>
+</html>
