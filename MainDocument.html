@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-		<!--meta tag for proper rendering and touch zooming.-->
-		<meta name="viewport" content="width=device-width, initial-scale=1"
+	<head>  
+	
+		<!--meta tag for proper rendering & touch zooming-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		
-		<!--jQuery mobile css and libraries-->
+		<!--jQuery mobile css libraries-->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		
-		<!--Bootstrap libraries-->
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--Graphite jQuery library for customised swatches-->
 		
 	</head>
+
+	<body>
 	
-	<body class="darkenBackground">
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-theme="b">
+				<h2>Football Development Prototype</h2>
+			</div>
+			
+			<div data-role="content" data-theme="d">
+				
+				<input type="button" data-mini="true" data-icon="home" data-transition="slide" onclick="location.href='MainDocument.html';" value="Home page" />
+				<input type="button" data-mini="true" data-icon="info" data-transition="slide" onclick="location.href='Profiling.html';" value="Are you a player ? Register" />
+				<input type="button" data-mini="true" data-icon="info" data-transition="slide" onclick="location.href='userRegistration.html';" value="General user registration." />
+				<input type="button" data-mini="true" data-icon="forward" data-transition="slide" onclick="location.href='Login.html';" value="Login please." />
+				<input type="button" data-mini="true" data-icon="star" data-transition="slide" onclick="location.href='TeamOfTheWeek.html';" value="Top Squad of the Week." />
+				
+			</div>
+			
+			<div data-role="header" data-theme="b">
+				<h2>&copy Cognition Team 2016</h2>
+			</div>
 		
-		<!--main page -->
-		<div data-role="page" data-theme="a|b">
-			
-			<!--dividing page into header, main and footer-->
-			<div data-role="header" data-theme"a|b">
-				<h1> Welcome to Football Development</h1>
-			</div>
-			
-			<!--Navigation bar to select which page you want to go on. Choose preference ??-->
-			<div style="text-align:center">
-				<input type="button" data-mini="true" data-transition="slide" class="btn btn-primary" onclick="location.href='MainDocument.html';" value="Home" />
-				<input type="button" data-mini="true" data-transition="slide" class="btn btn-primary" onclick="location.href='Profiling.html';" value="Register ?" />
-				<input type="button" data-mini="true" data-transition="slide" class="btn btn-primary" onclick="location.href='Login.html';" value="Login please." />
-				<input type="button" data-mini="true" data-transition="slide" class="btn btn-primary" onclick="location.href='TeamOfTheWeek.html';" value="Team of the Week." />
-			</div>
-			
+		</div>
+	
 	</body>
 
 </html>

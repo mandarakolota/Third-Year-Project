@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-		<!--meta tag for proper rendering and touch zooming.-->
-		<meta name="viewport" content="width=device-width, initial-scale=1"
+	<head>  
+	
+		<!--meta tag for proper rendering & touch zooming-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		
-		<!--jQuery mobile css and libraries-->
+		<!--jQuery mobile css libraries-->
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		
-		<!--Bootstrap libraries-->
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--Graphite jQuery library for customised swatches-->
 		
 	</head>
+
 	<body>
-		
-		<div data-role="header" data-theme"a|b">
-				<h1> Player Profiling Page.</h1>
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-theme="b">
+				<h2>Player registration and profiling.</h2>
 			</div>
 			
-		<div id="navigation" style="text-align:center">
-			<a data-transition="slide" class="btn btn-default" href="MainDocument.html">Home</a>
-			<a data-transition="slide" class="btn btn-default" href="Login.html">Login</a>		
-		</div>
-
-		<div data-role="fieldcontain" data-theme="a" class="ui-content">
+			<div data-role="content" data-theme="d" class="ui-content">
+				
+				<a href="MainDocument.html" data-icon="home" data-role="button" data-mini="true">Home</a>
 				
 				<!--User interface for player profiling registration-->
 			
@@ -35,7 +33,7 @@
 				<textarea data-mini="true" name="Pstyle" id="Pstyle" placeholder="Describe the style of your football skills."></textarea>
 				<textarea data-mini="true" name="Pimprove" id="Pimprove" placeholder="List the areas in which you want to improve on"></textarea>
 				
-				<fieldset data-role="controlgroup" data-theme="a" data-mini="true">
+					<fieldset data-role="controlgroup" data-theme="e" data-mini="true">
 					
 					<!--Player selects date of birth-->
 					<legend>Date of Birth:</legend>
@@ -86,9 +84,9 @@
 					</select>
 				</fieldset>
 				
-				<fieldset data-role="controlgroup" data-theme="a" data-mini="true">	
+				<fieldset data-role="controlgroup" data-theme="e" data-mini="true">	
 					<!--Selecting any of the positions they play on the field. I used radiobuttons-->
-					<legend>Select Position :</legend>
+					<legend>Position :</legend>
 					<input type="radio" name="radio-mini" id="GK" value="choice-1" checked="checked">
 					<label for="GK">Goalkeeper</label>
 					
@@ -115,12 +113,9 @@
 					
 					<input type="radio" name="radio-mini" id="S" value="choice-9">
 					<label for="S"> Striker </label>
-			
+	
 				</fieldset>
-			</div>
-			
-			<!--Selecting qualities and capabilities. I used the slider for a rate out of 10.-->
-					
+				
 				<label for="slider-2"> Rate Heading Skills :</label>
 				<input type="range" name="slider-2" id="slider-2" value="5" min="1" max="10"  />
 				
@@ -141,8 +136,15 @@
 				
 				<input type="button" data-theme="a|b" data-mini="true" data-transition="slide" class="btn btn-primary" onclick="location.href='Login.html';" value="Submit" />
 			 
-			<div data-role="footer" data-theme="a|b">
-				<h1> Cognition Team 2016 </h1>
+				
 			</div>
-		</body>
-	</html>
+			
+			<div data-role="header" data-theme="b">
+				<h2>&copy Cognition Team 2016</h2>
+			</div>
+		
+		</div>
+	
+	</body>
+
+</html>

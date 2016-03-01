@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+	
+		<!--meta tag for proper rendering & touch zooming-->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<!--jQuery mobile css libraries-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		
+		<!--Graphite jQuery library for customised swatches-->
+		
+	</head>
+
+	<body>
+	
+		<div data-role="page" data-theme="b">
+			<div data-role="header" data-theme="b">
+				<h2>Player registration and profiling.</h2>
+			</div>
+			
+			<div data-role="content" data-theme="d" class="ui-content">
+				
+				<a href="MainDocument.html" data-icon="home" data-role="button" data-mini="true">Home</a>
+				
+				<!--User interface for user registration-->
+			
+				<input data-mini="true" type="text" name="uName" id="uName" value="" placeholder="Username" />
+				<input data-mini="true" type="text" name="uFName" id="uFName" value="" placeholder="First and last name" />
+				<input data-mini="true" type="text" name="uContact" id="uContact" value="" placeholder="Input contact number" />	
+				<input data-mini="true" type="text" name="uEmail" id="uEmail" value="" placeholder="Please enter your email address" />	
+				<input data-mini="true" type="text" name="uAge" id="uAge" value="" placeholder="Input your age" />		
+				<input data-mini="true" type="text" name="uPassword" id="uPassword" value="" placeholder="Enter new Password" />
+				<input data-mini="true" type="text" name="cPassword" id="cPassword" value="" placeholder="Confirm Password" />
+				
+				<fieldset data-role="controlgroup" data-theme="e" data-mini="true">
+					
+					<label for="Gender">Gender</label>
+					<select name="Gender" id="Gender">
+							<option>Gender</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+					</select>	
+				</fieldset>
+				
+				<a href="Login.html" data-icon="forward" data-role="button" data-mini="true">Submit</a>
+				
+			</div>	
+				
+	
